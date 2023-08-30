@@ -1,0 +1,28 @@
+<div class="content">
+
+<div class="city-list">
+  <h1> Weather Application</h1>
+  <img class=" img" src="assets/logo.jpg " alt="image" width="350px" height="150px" />
+  
+  <br>
+  <br>
+    <input type="text" name="cityName" [(ngModel)]="city" placeholder="Enter a city name">
+    &nbsp;&nbsp;
+    <button (click)="getWeather()">Get Weather</button>
+    <br/>
+    <br/>
+    <p class="error-message" *ngIf="error">{{ error }}</p>
+
+  </div>
+
+  <div class="weather-display" *ngIf="weatherData">
+    <h2><span class="A">{{ weatherData.name }}</span>&nbsp;&nbsp; <img [src]="'https://openweathermap.org/img/w/' + weatherData.weather[0].icon + '.png'" alt="Weather Icon"></h2>
+    <div class="weather-info">
+      <p>Temperature: <span class="A">{{ kelvinToCelsius(weatherData.main.temp) | number:'1.0-1' }}°C</span></p>
+      <p>Humidity:<span class="A">{{weatherData.main.humidity}}</span></p>
+      <p>Weather: <span class="A">{{ weatherData.weather[0].description }}</span></p>
+     
+      
+    </div>
+  </div>
+</div>

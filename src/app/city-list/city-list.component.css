@@ -1,0 +1,54 @@
+.city-list {
+    text-align: center;
+    margin: 20px;
+   
+  }
+  
+  .content input {
+    padding: 8px;
+    font-size: 16px;
+    border: 2px solid black;
+    
+  }
+  
+  .content button {
+    padding: 8px 16px;
+    font-size: 16px;
+    background-color: #0965c2;
+    color: rgb(219, 217, 217);
+    border: 2px solid black;
+    cursor: pointer;
+  }
+
+  .weather-display{
+    font-size: 20px;
+    text-align: center;
+   
+  }
+   .img{
+    border: 2px solid black;
+   }
+  .error-message {
+    color: rgb(249, 16, 16);
+    font-size: 20px;
+    margin-top: 10px;
+    
+  }
+  .content{
+    height: 600px;
+    width: 400px;
+    border: 2px solid black;
+    background-color:rgba(255, 255, 255, 0.799);
+    margin-left: 530px;
+    margin-top: 60px;
+  }
+
+  
+ .weather-info{
+font-weight: bold;
+  }
+  .A{
+    color: rgb(23, 43, 82);
+  }
+  
+  
